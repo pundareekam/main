@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_rule_prior_to_under_investige</fullName>
+    <active>true</active>
+    <description>Validation rule prior to under investigation and closed</description>
+    <errorConditionFormula>AND (
+OR ( ISPICKVAL(PRIORVALUE(Incident_Status__c),&apos;Under Investigation&apos;),
+     ISPICKVAL(PRIORVALUE(Incident_Status__c),&apos;Suspension&apos; ),
+     ISPICKVAL(Incident_Status__c, &apos;Closed&apos;) ),
+OR ( ISBLANK(TEXT( Likelihood__c )), 
+     ISBLANK(TEXT( Risk_Rank__c )), 
+     ISBLANK(TEXT( primary_cause__c )) , 
+	 ISBLANK(TEXT( Secondary_Cause__c )), 
+	 ISBLANK( Initial_description__c ))
+)</errorConditionFormula>
+    <errorMessage>Initial description, likelihood, severity, primary cause and secondary cause can not be blank</errorMessage>
+</ValidationRule>

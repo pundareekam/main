@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Option_Expired_30_Days_for_Archiv__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Tracking for when files can be removed from Intralinks.</inlineHelpText>
+    <label>Date Option Expired +30 Days for Archive</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

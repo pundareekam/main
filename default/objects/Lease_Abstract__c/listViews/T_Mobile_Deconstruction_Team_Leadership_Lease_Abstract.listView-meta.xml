@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T_Mobile_Deconstruction_Team_Leadership_Lease_Abstract</fullName>
+    <filterScope>Queue</filterScope>
+    <label>T-Mobile Deconstruction Team Leadership</label>
+    <queue>T_Mobile_Deconstruction_Team_Leadership</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

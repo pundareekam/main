@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T_Mobile_Leasing_Team_Lease_Abstract</fullName>
+    <filterScope>Queue</filterScope>
+    <label>T-Mobile Leasing Team</label>
+    <queue>T_Mobile_Leasing_Team</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>
